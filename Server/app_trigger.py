@@ -16,7 +16,7 @@ def handle_request():
         print(filename)
         print(files_ids) 
         print(filename)
-        temp = list(filename.split('696969'))
+        temp = list(filename.split('*//'))
         print(temp)
         appname = temp[0]
         flag = temp[2]
