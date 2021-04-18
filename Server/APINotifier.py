@@ -1,6 +1,6 @@
 ## Install request module by running ->
 #  pip3 install requests
-#Enable Firebase Messaging 
+# Enable Firebase Messaging for your service Account 
 # Replace the deviceToken key with the device Token for which you want to send push notification.
 # Replace serverToken key with your serverKey from Firebase Console
 
