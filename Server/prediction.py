@@ -11,8 +11,7 @@ import json
 from Notifier import NotificationGenerator
 from cloudUpload import upload_blob
 
-
-
+##Loading APK File
 def procedure(fileName,appName,deviceToken):
   client = storage.Client()
   with open('/home/debian/Documents/run_server/testapk.apk','wb') as f:
@@ -46,7 +45,8 @@ def procedure(fileName,appName,deviceToken):
     ppdf.writelines([perm+"\n" for perm in perms])
   permissionPrediction = predictionModel.predict(np.array(predictionList, ndmin=3))
   print(predictionModel.predict(np.array(predictionList, ndmin=3)))
-
+  
+##Extract Features from APK
   def recProcess(arr1):
     res = []
     for i in arr1:
