@@ -22,33 +22,7 @@ def createPDF(fileName,permissionPrediction,recieversPrediction,servicesPredicti
     In short, they create backdoors, corrupts files and spy on your online activities like passwords, credit card numbers, surfing habits and more. Not only has that but also infected entire network of devices and pops-up annoying ads.
     Android Malware could be mainly categorized as Adware, Spyware and Trojans which can affect the Android device in various ways as mentioned below.'''
 
-    # pdf.set_font('Times', '', 12)
-    # pdf.multi_cell(0, 5, txt)
-    # pdf.ln()
-    # pdf.set_font('Times', 'B', 13)
-    # pdf.write(5, 'Adware: ')
-    # pdf.set_font('Times', '', 12)
-    # txt1 = "Not really malicious. But causes huge amount of inconvenience and can give way to a lot of other malware."
-    # pdf.write(5, txt1)
-
-    # pdf.ln(4)
-    # pdf.ln(4)
-    # pdf.set_font('Times', 'B', 13)
-    # pdf.write(5, 'Spyware: ')
-    # pdf.set_font('Times', '', 12)
-    # txt2 = 'Malicious software that is designed to spy on user activities.'
-    # pdf.write(5,txt2)
-
-    # pdf.ln(4)
-    # pdf.ln(4)
-    # pdf.set_font('Times', 'B', 13)
-    # pdf.write(5, 'Trojan: ')
-    # pdf.set_font('Times', '', 12)
-    # txt3 = 'Masks as a genuine software and creates backdoors to let malware in.'
-    # pdf.write(5,txt3)
-    # pdf.ln(4)
-    # pdf.ln(4)
-
+   
     txt4 = '''Most Android malware do not attempt to perform exploits to get to root, as that is not required for nefarious motives. 
     Rather, apps are commonly modified to add in a hidden Trojan component so that when a user installs an app the Trojan is also installed. 
     Once installed and run, Android malware may employ a wide variety of permissions enabled for the app to then send text messages, 
@@ -129,14 +103,7 @@ def createPDF(fileName,permissionPrediction,recieversPrediction,servicesPredicti
         pdf.write(5,txt7)
         pdf.ln(4)
 
-    # elif count == 1:
-    #     pdf.set_text_color(0,0,139)
-    #     pdf.set_font('Times', 'B', 13)
-    #     pdf.write(5,'Low Level Risk: ')
-    #     pdf.set_font('Times', '', 12)
-    #     txt7 = "Few Permissions and Scripts may conflict but it is probably safe to use. A user may continue to use this Application if any more system permissions are requested, uninstall recommended."
-    #     pdf.write(5,txt7)
-
+   
     elif count == 2:
         pdf.set_text_color(236,134,18)
         pdf.set_font('Times', 'B', 13)
