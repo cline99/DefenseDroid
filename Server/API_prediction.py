@@ -1,11 +1,12 @@
+import keras
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import Normalizer
+from APINotifier import NotificationGenerator
+from API_PDFMaker import createPDF
+from API_cloudUpload import upload_blob
+
 def Predictor(filename,appname,token,comboName):
-    import keras
-    import pandas as pd
-    import numpy as np
-    from sklearn.preprocessing import Normalizer
-    from APINotifier import NotificationGenerator
-    from API_PDFMaker import createPDF
-    from API_cloudUpload import upload_blob
     def Degree():
         print("Degree")
         model = keras.models.load_model("/home/debian/Documents/res/APIs/LSTM_degree_model.hdf5")
