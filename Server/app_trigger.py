@@ -21,7 +21,6 @@ def handle_request():
         appname = temp[0]
         flag = temp[2]
         print(flag)
-        #print(filename,appname,token)
         ip = flask.request.remote_addr
         mydb = mysql.connector.connect(
         host="localhost",
@@ -45,8 +44,6 @@ def handle_request():
         #timestr = time.strftime("%Y%m%d-%H%M%S")
         
     print("\n")
-    #print('test')
-    #downloadFile()
     return send_file('/home/debian/Documents/sample.pdf',as_attachment=True)
      
 app.run(host="0.0.0.0", port=80, debug=True)
