@@ -1,8 +1,7 @@
+#Uploads a file to the bucket
 from google.cloud import storage
-
-
 def upload_blob(fileName,appName,comboName):
-    """Uploads a file to the bucket."""
+    
     bucket_name = "andmaldeploy-testphase1"
     source_file_name = '/home/debian/Documents/res/Reports/' + comboName + '.pdf'
     destination_blob_name = 'reports/'+ comboName + '.pdf'
@@ -18,5 +17,3 @@ def upload_blob(fileName,appName,comboName):
             source_file_name, destination_blob_name
         )
     )
-    #NotificationGenerator(deviceToken,appName,fileName,appCombo)
-
