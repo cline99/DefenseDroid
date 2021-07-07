@@ -37,6 +37,3 @@ def NotificationGenerator(token, appName,fileName,comboName):
   print(response.status_code)
 
   print(response.json())
-
-
-#NotificationGenerator('dd9_jXVPRd2roRcS_o1qZUAPA91bHHRzduFpvNuGQsZ9DTrFwesx7IUacVTOsOZ1j-cMLNAUn-879bHdgg-ePLaEONhL63pdIzUpS2QvTizgnLUEO0W6PzvQxc7YxUgtQt_lbktI-lYrsBJN8lEjYXdKQNA9_-fJI2')
