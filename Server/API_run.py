@@ -12,6 +12,7 @@ from API_prediction import Predictor
 import mysql.connector
 from google.cloud import storage
 from API_PDFMaker import createPDF
+import csv
 
 
 
@@ -84,15 +85,6 @@ def main(filename):
         print(count)
     except:
         pass
-
-
-import networkx as nx
-import time
-import argparse
-import csv
-from multiprocessing import Pool as ThreadPool
-from functools import partial
-import glob
 
 def obtain_sensitive_apis(file):
     print("In Obtain_Sensitive_APIs")
